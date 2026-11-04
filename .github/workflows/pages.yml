@@ -1,6 +1,9 @@
 name: Publish laboratory website
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [website-public.zip, .github/workflows/pages.yml]
 permissions:
   contents: read
   pages: write
